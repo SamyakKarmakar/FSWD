@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <table border="2px">
+        <tr>
+            <td style="width: 100px; height: 100px;" colspan="6" valign="top">Welcome to stack programming</td>
+            <td style="width: 100px; height: 100px;" rowspan="6" valign="top" align="right">A</td>
+        </tr>
+        <tr>
+            <td style="width: 100px; height: 100px;" rowspan="6">C</td>
+            <td style="width: 100px; height: 100px;" colspan="4" align="right" valign="bottom">B</td>
+            <td style="width: 100px; height: 100px;" rowspan="4" align="right" valign="top">K</td>
+        </tr>
+        <tr>
+            <td style="width: 100px; height: 100px;" rowspan="4">D</td>
+            <td style="width: 100px; height: 100px;" colspan="2" valign="top">L</td>
+            <td style="width: 100px; height: 100px;" rowspan="2" valign="top">G</td>
+        </tr>
+        <tr>
+            <td style="width: 100px; height: 100px;" rowspan="2" align="middle">E</td>
+            <td style="width: 100px; height: 100px;" align="right" valign="bottom">F</td>
+        </tr>
+        <tr>
+            <td style="width: 100px; height: 100px;" colspan="2" valign="top" align="right">H</td>
+        </tr>
+        <tr>
+            <td style="width: 100px; height: 100px;" colspan="4" align="middle" valign="bottom">I</td>
+        </tr>
+        <tr>
+            <td style="width: 100px; height: 100px;" colspan="6" valign="top">J</td>
+        </tr>
+    </table>
+</body>
+</html>
