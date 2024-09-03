@@ -1,0 +1,123 @@
+body {
+    background-color: #dce2f5;
+}
+
+.heading {
+    font-family: 'Georgia', serif;
+    font-size: 3em;
+    color: #333333;
+    text-align: center;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.sub-heading {
+    font-family: 'Georgia', serif;
+    font-size: 2.5em;
+    color: #333333;
+    text-align: center;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.carousel-image {
+    height: 600px;
+}
+
+.cards-div {
+    margin-top: 70px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card {
+    background-color: #c3c7d6;
+    width: 30%;
+    height: 600px;
+}
+
+.review-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.testimonies {
+    background-color: #bbbec9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.review {
+    width: 32%;
+}
+
+.border-right {
+    border-right: 2px solid #89a1f8;
+}
+
+td{
+    padding: 10px;
+}
+
+footer{
+    margin-top: 100px;
+    background-color: #222327;
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    height: 600px;
+    padding: 50px;
+}
+
+.footer-content {
+    color: #dce2f5;
+    width: 33%;
+}
+
+.footer-content > h6 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 949px) {
+    .carousel-image {
+        height: 300px;
+    }
+    
+    .cards-div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 80% !important;
+        height: 20%;
+        margin-bottom: 50px;
+    }
+    .testimonies {
+        flex-direction: column;
+    }
+    .review {
+        width: 100%;
+        border-bottom: 2px solid #89a1f8;
+    }
+    .border-right {
+        border-right: none;
+    }
+    footer {
+        flex-direction: column;
+        height: 1000px;
+    }
+    .footer-content {
+        width: 100%;
+        height: 30%;
+    }
+}
