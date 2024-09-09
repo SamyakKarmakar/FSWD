@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator with Dial Gauge</title>
+  <link rel="stylesheet" href="BMI_Calculator.css">
+</head>
+<body>
+  <div class="container">
+   <h1 style="color: #873981;">BMI Calculator</h1>
+    <div class="input-group">
+      <label for="height">Height (cm):</label>
+      <input type="number" id="height" placeholder="Enter your height in cm">
+    </div>
+    <div class="input-group">
+      <label for="weight">Weight (kg):</label>
+      <input type="number" id="weight" placeholder="Enter your weight in kg">
+    </div>
+    <button onclick="calculateBMI()">Calculate BMI</button>
+    <div id="result"></div>
+    <div id="status"></div>
+    <div class="scale-gauge-container">
+      <img src="C:\Users\karma\OneDrive\Desktop\FSWD\WhatsApp Image 2024-09-10 at 01.30.24_1a0b78a1.jpg" alt="Dial Gauge" class="scale-gauge" /> 
+      <div class="pointer" id="pointer"></div> 
+    </div>
+  </div>
+  <script src="BMI_Calculator.js"></script>
+</body>
+</html>
