@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+#mouseArea {
+  width: 200px;
+  height: 100px;
+  background-color: lightblue;
+  line-height: 100px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+#output {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+textarea {
+  resize: none; /* Make the textarea not resizable */
+  width: 100%;
+}
+
+#progressContainer {
+  margin-bottom: 20px;
+}
+
+#image {
+  width: 200px;
+  height: auto;
+  transition: filter 0.3s ease;
+}
+
+.blur {
+  filter: blur(5px);
+}

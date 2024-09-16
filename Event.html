@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Handling Demo</title>
+  <link rel="stylesheet" href="Event.css">
+</head>
+<body>
+
+<h1>Event Handling Demo</h1>
+
+<!-- Mouse Event Area -->
+<div id="mouseArea">Hover and Click Here</div>
+
+<!-- Output Area to Display Events -->
+<p id="output"></p>
+
+<!-- Form Section -->
+<form id="form">
+  <label for="name">Name: </label>
+  <input type="text" id="name" placeholder="Enter your name">
+  <button type="submit">Submit</button>
+</form>
+
+<!-- Textarea for Clipboard Operations -->
+<textarea id="textBox" rows="4" cols="50" placeholder="Type text here..."></textarea>
+
+<!-- Audio Control Link -->
+<a href="#" id="audioLink">Play/Pause Audio</a>
+
+<!-- Progress Bar for Audio Seek -->
+<div id="progressContainer">
+  <input type="range" id="audioProgress" value="0" min="0" max="100">
+</div>
+
+<!-- Hidden Audio Element to Handle Playback -->
+<audio id="audio" preload="auto">
+  <source src="Maid with the Flaxen Hair - Richard Stoltzman OFFICIAL.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<!-- Image to be blurred -->
+<img id="image" src="facebook-continents.png" alt="Sample Image">
+
+<!-- Link to the external JavaScript file -->
+<script src="Event.js"></script>
+
+</body>
+</html>
