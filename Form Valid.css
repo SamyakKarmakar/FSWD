@@ -1,0 +1,28 @@
+input::placeholder {
+    color: gray;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    opacity: 1;
+}
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: left;
+}
+input[type="submit"] {
+    background-color: #4caf96;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #4dbf9f;
+}
