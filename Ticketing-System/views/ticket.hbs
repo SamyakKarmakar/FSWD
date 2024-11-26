@@ -1,0 +1,14 @@
+<h1>Ticket Details</h1>
+<div>
+  <h2>{{ticket.title}}</h2>
+  <p>Description: {{ticket.description}}</p>
+  <p>Status: {{ticket.status}}</p>
+  <p>Created By: {{ticket.user}}</p>
+</div>
+{{#if isAdmin}}
+<form method="POST" action="/delete-ticket/{{ticket._id}}">
+  <button type="submit" style="color: red;">Delete Ticket</button>
+</form>
+<a href="/edit-ticket/{{ticket._id}}">Edit Ticket</a>
+{{/if}}
+<a href="/dashboard">Back to Dashboard</a>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Welcome, {{username}}</h1>
+
+    <div>
+        <h2>Your Tickets</h2>
+
+        {{#if tickets}}
+            <ul>
+                {{#each tickets}}
+                    <li>
+                        <h3>{{this.title}}</h3>
+                        <p>Description: {{this.description}}</p>
+                        <p>Status: {{this.status}}</p>
+                        
+                        <form action="/delete-ticket/{{this._id}}" method="POST">
+                            <button type="submit">Delete</button>
+                        </form>
+
+                        <a href="/edit-ticket/{{this._id}}">Edit</a>
+                    </li>
+                {{/each}}
+            </ul>
+        {{else}}
+            <p>No tickets found.</p>
+        {{/if}}
+
+        <a href="/create-ticket">Create New Ticket</a>
+
+    </div>
+    
+    <div>
+        <a href="/logout">Logout</a>
+    </div>
+</body>
+</html>
